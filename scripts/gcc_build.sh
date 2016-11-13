@@ -101,6 +101,10 @@ make -j2
 make install
 
 
+#compress GCC files to tar.xz file. Release the entire prefix folder.
+cd $HOME/RX-Toolchain
+
+XZ_OPT=-9 tar cJf gcc_rx.tar.xz prefix
 
 
 
