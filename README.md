@@ -21,3 +21,8 @@ The GCC source code is from [gcc-renesas.com](https://gcc-renesas.com/rx/rx-late
 ## Build instruction ##
 How to build the GCC from the source file. ([Build instruction](https://gcc-renesas.com/wiki/index.php?title=How_to_build_the_RX_Toolchain_under_Ubuntu_14.04))
 	
+---
+
+## Projects using the prebuild release file [(link)](https://github.com/GerryFerdinandus/Renesas-RX-GCC/releases) ##
+[![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)
+ [Renesas-RX-Board-Support-Package-for-YRDKRX63N](https://github.com/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)
