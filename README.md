@@ -22,6 +22,7 @@ The GCC source code is from [gcc-renesas.com](https://gcc-renesas.com/rx/rx-late
 ## Build instruction for the GCC compiler ##
   * How to build the GCC from the source file. ([Build instruction](https://gcc-renesas.com/wiki/index.php?title=How_to_build_the_RX_Toolchain_under_Ubuntu_14.04))
   * Use the script file from this project ([link](https://github.com/GerryFerdinandus/Renesas-RX-GCC/blob/master/scripts/gcc_build.sh))	
+
 ---
 
 ## Projects using the prebuild release file [(link)](https://github.com/GerryFerdinandus/Renesas-RX-GCC/releases) ##
