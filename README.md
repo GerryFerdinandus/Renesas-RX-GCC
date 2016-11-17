@@ -29,5 +29,5 @@ The GCC source code is from [gcc-renesas.com](https://gcc-renesas.com/rx/rx-late
   * [![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)
  [Renesas-RX-Board-Support-Package-for-YRDKRX63N](https://github.com/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)
 
-  * [![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N)
+  * [![Coverity Scan Build Status](https://scan.coverity.com/projects/10835/badge.svg)](https://scan.coverity.com/projects/gerryferdinandus-renesas-rx-freertos-demo-project-for-yrdkrx63n)[![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N)
 [Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N](https://github.com/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N)
