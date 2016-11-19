@@ -26,8 +26,8 @@ The GCC source code is from [gcc-renesas.com](https://gcc-renesas.com/rx/rx-late
 ---
 
 ## Projects using the prebuild release file [(link)](https://github.com/GerryFerdinandus/Renesas-RX-GCC/releases) ##
-  * [![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)
- [Renesas-RX-Board-Support-Package-for-YRDKRX63N](https://github.com/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)
-
-  * [![Coverity Scan Build Status](https://scan.coverity.com/projects/10835/badge.svg)](https://scan.coverity.com/projects/gerryferdinandus-renesas-rx-freertos-demo-project-for-yrdkrx63n)[![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N)
-[Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N](https://github.com/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N)
+|Project|Linux Build Status|Coverity Scan Build Status|
+|:--|:--:|:--:|
+|[Renesas-RX-Board-Support-Package-for-YRDKRX63N](https://github.com/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)|[![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-Board-Support-Package-for-YRDKRX63N)|[![Coverity Scan Build Status](https://scan.coverity.com/projects/10827/badge.svg)](https://scan.coverity.com/projects/gerryferdinandus-renesas-rx-board-support-package-for-yrdkrx63n)|
+|[Renesas-RX-FreeRTOS](https://github.com/GerryFerdinandus/Renesas-RX-FreeRTOS)|[![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS)|[![Coverity Scan Build Status](https://scan.coverity.com/projects/10863/badge.svg)](https://scan.coverity.com/projects/gerryferdinandus-renesas-rx-freertos)|
+|[Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N](https://github.com/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N)|[![Build Status](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N.svg?branch=master)](https://travis-ci.org/GerryFerdinandus/Renesas-RX-FreeRTOS-demo-project-for-YRDKRX63N)|[![Coverity Scan Build Status](https://scan.coverity.com/projects/10835/badge.svg)](https://scan.coverity.com/projects/gerryferdinandus-renesas-rx-freertos-demo-project-for-yrdkrx63n)|
