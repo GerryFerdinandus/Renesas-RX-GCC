@@ -7,7 +7,7 @@
 #update the linux 14.04
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install build-essential flex bison texinfo libncurses5-dev m4 -y
+sudo apt-get install build-essential flex bison texinfo libncurses5-dev m4 p7zip-full -y
 
 cd $HOME
 
@@ -28,14 +28,14 @@ mkdir prefix
 #Download the source codes for Binutils-RX, Newlib-RX, GCC-RX
 # and rename it to generic name
 cd source
-wget -O binutils.tar.gz https://gcc-renesas.com/downloads/d.php?f=rx/binutils/4.8.0.201603-gnurx/binutils-2.24_2016q3.tar.gz
-wget -O newlib.tar.gz https://gcc-renesas.com/downloads/d.php?f=rx/newlib/4.8.0.201603-gnurx/newlib-2.2.0_2016q3.tar.gz
-wget -O gcc.tar.gz https://gcc-renesas.com/downloads/d.php?f=rx/gcc/4.8.0.201603-gnurx/gcc-4.8.4_2016q3.tar.gz
+wget -O binutils.zip https://gcc-renesas.com/downloads/d.php?f=rx/binutils/4.8.4.201604-gnurx/binutils_2.24_RX_2016q4.zip
+wget -O newlib.zip https://gcc-renesas.com/downloads/d.php?f=rx/newlib/4.8.4.201604-gnurx/newlib_2.2.0_RX_2016q4.zip
+wget -O gcc.zip https://gcc-renesas.com/downloads/d.php?f=rx/gcc/4.8.4.201604-gnurx/gcc_4.8.4_RX_2016q4.zip
 
 #extract to generic folder name
-mkdir binutils && tar -zxvf binutils.tar.gz -C binutils --strip-components 1
-mkdir newlib && tar -zxvf newlib.tar.gz -C newlib --strip-components 1
-mkdir gcc && tar -zxvf gcc.tar.gz -C gcc --strip-components 1
+7z x binutils.zip
+7z x newlib.zip
+7z x gcc.zip
 
 #INSTALL BINUTILS-RX
 #Create a new folder for binutils and change the current directory to it: 
@@ -44,7 +44,7 @@ mkdir binutils
 cd binutils
 
 #Configure and make
-$HOME/RX-Toolchain/source/binutils/configure --target=rx-elf --prefix=$HOME/RX-Toolchain/prefix/ --enable-maintainer-mode --disable-werror 
+sh $HOME/RX-Toolchain/source/binutils/configure --target=rx-elf --prefix=$HOME/RX-Toolchain/prefix/ --enable-maintainer-mode --disable-werror 
 make -j2
 make install
 
@@ -58,7 +58,7 @@ export PATH="$HOME/RX-Toolchain/prefix/bin:$PATH"
 #Change the current directory to GCC source folder
 cd ../source/gcc
 #download prerequisites
-./contrib/download_prerequisites
+sh ./contrib/download_prerequisites
 
 #Return to the build directory
 cd ../../build
@@ -68,7 +68,7 @@ mkdir gcc
 cd gcc
 
 #Configure and make
-$HOME/RX-Toolchain/source/gcc/configure --target=rx-elf --prefix=$HOME/RX-Toolchain/prefix/ --enable-languages=c,c++ --disable-shared --with-newlib --enable-lto --enable-gold --disable-libstdcxx-pch --with-pkgversion=GCC_Build_1.02
+sh $HOME/RX-Toolchain/source/gcc/configure --target=rx-elf --prefix=$HOME/RX-Toolchain/prefix/ --enable-languages=c,c++ --disable-shared --with-newlib --enable-lto --enable-gold --disable-libstdcxx-pch --with-pkgversion=GCC_Build_1.02
 
 make all-gcc -j2
 make install-gcc
@@ -86,7 +86,7 @@ mkdir newlib
 cd newlib
 
 
-$HOME/RX-Toolchain/source/newlib/configure --target=rx-elf --prefix=$HOME/RX-Toolchain/prefix/
+sh $HOME/RX-Toolchain/source/newlib/configure --target=rx-elf --prefix=$HOME/RX-Toolchain/prefix/
 make -j2
 make install
 
